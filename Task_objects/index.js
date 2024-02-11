@@ -8,7 +8,13 @@ const cat = {
 };
 
 // Write the code for 1st task below
+const catName = cat['name'];
 
+// Task 2: Run the greeting() method using dot notation.
+cat.greeting();
+
+// Task 3: Update the color property value to black.
+cat.color = 'black';
 
 //Write your code above
 
