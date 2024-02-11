@@ -4,6 +4,7 @@ let arr = [1, 3, 2, 5, 4];
 
 let filterArr;
 //Write your code below
+ filterArr = numbers.filter(number => number % 2 !== 0);
 
 //Write your code above
 console.log("Filtered Array:-", filterArr);
@@ -11,7 +12,7 @@ console.log("Filtered Array:-", filterArr);
 // Find the square of each number of the array using map fumction and store it in squaredArray variable declared below. Output should be [1,9,4,16]
 let squaredArray;
 //Write your code below
-
+ squaredArray = numbers.map(number => number * number);
 //Write your code above
 console.log("Squared array", squaredArray);
 
