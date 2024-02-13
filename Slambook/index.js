@@ -1,18 +1,23 @@
-let form;
-let allSlamArray=[];
-//Write code below to select the form element
+document.addEventListener("DOMContentLoaded", function () {
+  // Select the form element using the ID
+  var form = document.getElementById("myForm");
 
-// Write your code above
-console.log(form,"form");
+  // Add a submit event listener
+  form.addEventListener("submit", function (event) {
+    // Prevent the default form submission
+    event.preventDefault();
 
-// Add the evenlistner below
+    // Log the message to the console
+    console.log("I am inside submit");
 
-//Write your code above
+    // Select input elements using ids
+    var contactName = document.getElementById("contactName").value;
+    var relationship = document.getElementById("relationship").value;
+    // Add more variables for other input fields as needed
 
-function showSlamList(){
-//Update the function here
-
-// Write your code above this line
-}
-
-showSlamList();
+    // Log the selected values to the console
+    console.log("Contact Name:", contactName);
+    console.log("Relationship:", relationship);
+    // Log values for other input fields as needed
+  });
+});
